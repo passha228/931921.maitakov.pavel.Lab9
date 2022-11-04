@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Practice 10</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <table>
+        <tbody>
+           <tr>
+                <th colspan="5"><input type="text" id = "input" value="0"></th>
+           </tr>
+            <tr>
+                <td><button onclick="addNum(7)">7</button></td>
+                <td><button onclick="addNum(8)">8</button></td>
+                <td><button onclick="addNum(9)">9</button></td>
+                <td><button onclick="addChar('/')">/</button></td>
+                <td><button onclick="clearAll()">C</button></td>
+            </tr>
+            
+            <tr>
+                <td><button onclick="addNum(4)">4</button></td>
+                <td><button onclick="addNum(5)">5</button></td>
+                <td><button onclick="addNum(6)">6</button></td>
+                <td><button onclick="addChar('*')">*</button></td>
+                <td><button onclick="chageSign()">&lt;-</button></td>
+            </tr>
+            
+            <tr>
+                <td><button onclick="addNum(1)">1</button></td>
+                <td><button onclick="addNum(2)">2</button></td>
+                <td><button onclick="addNum(3)">3</button></td>
+                <td><button onclick="addChar('-')">-</button></td>
+                <td rowspan="2"><button onclick="equal()">=</button></td>
+                
+            </tr>
+            
+            <tr>
+                <td colspan="2"><button onclick="addNum(0)">0</button></td>
+                <td><button onclick="addNum('.')">.</button></td>
+                <td><button onclick="addChar('+')">+</button></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+<script src = "script.js"></script>
+</html>
+
+
+
+
+
+
+<!--
+    <div id = "calc">
+        <div class = "input">
+            <input type="text">
+        </div>
+        <div class = "buttons">
+           
+            <button>7</button>
+            <button>8</button>
+            <button>9</button>
+            <button>/</button>
+            <button>C</button>
+            <button>4</button>
+            <button>5</button>
+            <button>6</button>
+            <button>*</button>
+            <button> &lt;- </button>
+            <button>1</button>
+            <button>2</button>
+            <button>3</button>
+            <button>-</button>
+            <button>7</button>
+        </div>
+    </div>
+-->
