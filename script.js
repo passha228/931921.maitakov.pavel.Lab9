@@ -1,12 +1,11 @@
 // осталось только сделать текст серым при нажатии на клавишу операции
-// и настроить rowspan rolspan в таблице
 
 var num1;
 var num2;
 var op;
 
 function addNum(num) {
-    if ($('#input').val() == "0") 
+    if ($('#input').val() == "0" || $('#input').val() == "Invalid input") 
         $('#input').val(num);
     else
         $('#input').val($('#input').val() + num);
@@ -24,9 +23,13 @@ function chageSign() {
 }
 
 function addChar(ch) {
-    op = ch;
     num1 = $('#input').val();
-    //$('#input').val($('#input').val()).style.color = "gray";
+    if(isNaN(num1)){
+        $('#input').val("Invalid input");
+        console.log("Invalid input");
+        return;
+    }
+    op = ch;
     clearAll();
 }
 
